@@ -82,6 +82,7 @@ componentDidMount() {
       <div className="card" style={styles.display_card} onMouseOver={this.d3Graph}>
         <div className="card-body">
           <h4 className="card-title">The temperateur is {this.props.data.main.temp}</h4>
+          <h4 className="card-subtitle mb-2 text-muted">The Sky will have {this.props.data.weather[0].description}</h4>
           <h6 className="card-subtitle mb-2 text-muted">The Air Pressure of the day {this.props.data.main.pressure}</h6>
           </div>
       </div>
